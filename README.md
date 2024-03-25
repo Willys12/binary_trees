@@ -9,5 +9,5 @@
 5. What is a complete, a full, a perfect, a balanced binary tree.
 
 Authors in This project are;
-    * Willys Odhiambo <ben.willys92@gmail.com>
-    * Yahya Tijjani <yahyatijjani99@gmail.com>
+    1. Willys Odhiambo <ben.willys92@gmail.com>
+    2. Yahya Tijjani <yahyatijjani99@gmail.com>
