@@ -7,20 +7,25 @@
  */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-if (parent == NULL)
-{
-return (binary_tree_node(NULL, value));
+binary_tree_t *new_node;
 
+if (!parent)
+{
+return (NULL);
 }
 
-if ((*parent).left == NULL)
+new_node = binary_tree_node(parent, value);
+if (!new_node)
 {
-(*parent).left = binary_tree_node(parent, value);
-}
-else
-{
-binary_tree_insert_left((*parent).left, value);
+return (NULL);
 }
 
-return (parent);
+if ((*parent).left)
+{
+(*new_node).left = (*parent).left;
+parent->left->parent = new_node;
+}
+(*parent).left = new_node;
+
+return (new_node);
 }
