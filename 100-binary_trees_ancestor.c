@@ -19,7 +19,7 @@ if (first == second)
 return ((binary_tree_t *)first);
 }
 
-if ((first->left == second || first->right == second) ||
+if (((*first).left == second || (*first).right == second) ||
 binary_trees_ancestor(first->left, second) ||
 binary_trees_ancestor(first->right, second))
 {
