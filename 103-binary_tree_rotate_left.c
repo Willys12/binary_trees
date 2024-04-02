@@ -10,7 +10,7 @@ binary_tree_t *t1, *temp;
 
 if (tree == NULL || tree->right == NULL)
 {
-return NULL;
+return (NULL);
 }
 t1 = tree->right;
 temp = t1->left;
